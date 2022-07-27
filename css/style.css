@@ -683,6 +683,9 @@ footer{
     grid-area: footer;
 }
 
+/*ANIMACIONES ABOUT*/
+
+
 
 
 
@@ -1150,7 +1153,6 @@ footer{
         #fotoBlend{
             width:100%;
             height: 400px;
-            
         }
 
         #fotoCafesVarios,
