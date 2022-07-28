@@ -344,6 +344,7 @@ font-size: 16px;
     background-color: #832042;
     color: white;
     padding: 20px;
+    transition-delay: 4s;
 }
 
 #logoFooter{
@@ -372,8 +373,6 @@ font-size: 16px;
 #principioPagina{
     text-decoration: none;
 }
-
-
 
 /*RESPONSIVE ABOUT*/
 
@@ -439,17 +438,15 @@ font-size: 16px;
     text-align: center;
 }
 
-#textoSobreNosotros{
+#textoSobreNosotros,
+#section{
     font-size: 14px;
     text-align:justify;
     margin-right: 60px;
 }
 
 #section{
-    font-size: 14px;
-    text-align:justify;
     margin-top: 15px;
-    margin-right: 60px;
 }
 
 #fotoSobreNosotros,
@@ -486,15 +483,9 @@ display: none;
         margin-top: 60px;
         z-index: 0;
         }
-
-    
    }     
 
-   
-
 /*GRILLA SOBRE NOSOTROS*/
-
-
 
 @media screen and (min-width: 769px) {
     
@@ -569,9 +560,7 @@ display: block;
     row-gap: 20px;  
     margin-right: 2%;
 }   
-
 }
-
 
 @media screen and (min-width: 1100px){
     #fotoSobreNosotros,
@@ -584,17 +573,15 @@ display: block;
         display: none;
     }
 
-    #textoSobreNosotros{
+    #textoSobreNosotros,
+    #section{
         font-size: 18px;
         text-align:justify;
         margin-right: 60px;
     }
     
     #section{
-        font-size: 18px;
-        text-align:justify;
         margin-top: 15px;
-        margin-right: 60px;
     }
 
     #sobreNosotros{
@@ -608,8 +595,6 @@ display: block;
         justify-items: center;
     }
 
-
-    
     #porqueCatarsis{
         display: grid;
         height: 550px;
@@ -640,7 +625,6 @@ display: block;
     }
   
 }
-
 
 
 /*GRILLA ABOUT*/
@@ -685,8 +669,6 @@ footer{
 
 
 
-
-
 /*MENU*/
 #menuCompleto{
     display: flex;
@@ -696,8 +678,7 @@ footer{
     flex-wrap: nowrap;
     margin-top: 180px;
     background-color: #832042;
-    width: 100%;
-    
+    width: 100%;   
 }
 
 #Cafe{
@@ -713,7 +694,9 @@ footer{
     margin-bottom: 100px;
 }
 
-#menuCafeteria{
+#menuCafeteria,
+#desayunoTitulo,
+#almuerzoTitul{
     font-family: 'Quattrocento', serif;
     font-size: 60px;
     color: black;
@@ -721,25 +704,6 @@ footer{
     text-align: center;
     width: 100%;
 }
-
-#desayunoTitulo{
-    font-family: 'Quattrocento', serif;
-    font-size: 60px;
-    color: black;
-    background-color:white;
-    text-align: center;
-    width: 100%;
-    }
-
-#almuerzoTitulo{
-    font-family: 'Quattrocento', serif;
-    font-size: 60px;
-    color: black;
-    background-color:white;
-    text-align: center;
-    width: 100%;
-}
-
 
 
 /*RESPONSIVE MENU*/
@@ -808,7 +772,6 @@ footer{
             height: 400px;
             width: 90%;
     }
-
 }
 
 
@@ -818,23 +781,12 @@ footer{
         width: 100%; 
     }   
 
-    #fotoBloqueDesayuno{
-        height: 500px;
-        width: 100%;
-        
-    }
-
+    #fotoBloqueDesayuno,
     #fotoMenuCafeteria{
         height: 500px;
-        width: 100%;
+        width: 100%;   
+    }
 }
-
-}
-
-
-
-
-
 
 
 
@@ -908,17 +860,16 @@ footer{
         }
 
         
-
-    #sectionEnviosFooter{
+        #sectionEnviosFooter{
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: "tituloEnvios" "bloqueEnvios" "footerEnvios";
-        row-gap: 50px;
-        column-gap: 10px;
-        margin-bottom: 80px;
-        margin-top: 40px;
-        
-    }
+            grid-template-columns: auto;
+            grid-template-rows: "tituloEnvios" "bloqueEnvios" "footerEnvios";
+            row-gap: 50px;
+            column-gap: 10px;
+            margin-bottom: 80px;
+            margin-top: 40px;
+        }
+
     #tituloEnvios{
         font-size: 30px;
         padding: 10%;
@@ -937,10 +888,6 @@ footer{
     }
 
 }
-
-
-
-
 
 
 /*CONTACT US*/
@@ -1051,13 +998,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
 /*SHOP*/
 
 /*TITULOS DEL SHOP*/
@@ -1150,7 +1090,6 @@ footer{
         #fotoBlend{
             width:100%;
             height: 400px;
-            
         }
 
         #fotoCafesVarios,
