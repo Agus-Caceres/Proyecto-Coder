@@ -120,44 +120,35 @@ background-color:#7B002C;
 #catarsisNombreSlogan{
 position: relative;
 top: 200px;
-right: 400px;
-
+right: 300px;
 text-align: center;
 }
 
  
-#nombreMarca{
+#nombreMarca,
+#bloqueNsi{
     font-family: 'Quattrocento', serif;
     font-size: 50px;
-    display: inline;
-    margin-right: 400px;
-    margin-left: 600px;
-   
+    display: block;
+    margin-right: 0%;
+    margin-left: 0px; 
 }
 
 #slogan{
     font-family: 'Gentium Book Plus', serif;
     font-size: 18px;
-    display: inline;
-    margin-right: 400px;
-    margin-left: 600px;
+    display: block;
+    margin-right: 0%;
+    margin-left: 0px;
   
 }
 
 #logoIndex{
     position: relative;
-    display: inline;
+    display: block;
     top: 190px;
-    margin-right: 680px;
-    margin-left: 320px;   
+    
 }
-
-/*FOOTER DEL INDEX*/
-
-
-/*RESPONSIVE INDEX*/
-
-
 
 #menu{
     grid-area: menu;
@@ -183,12 +174,27 @@ text-align: center;
     grid-area: bloqueNsi;
 }
 
-footer{
+#footerIndex{
     grid-area: footer;
-    margin-top: 40px;
+    display: block;
+    margin-top: 580px;
+    margin-right: 720px;
+    font-size: small;
 }
 
-@media screen and (max-width: 768px){
+#menuIndex{
+    display: flex ;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-wrap: nowrap;
+    justify-content:baseline;
+    margin-top: 10px;
+    margin-left: 0px;  
+    margin-right: 580px;
+    width: 100%;
+}
+
+@media screen and (max-width: 999px){
     #bodyIndex{
         background-image: none;
         background-size:75%;
@@ -200,7 +206,7 @@ footer{
                 display: inline;
                 position: fixed;
                 top: 80px;
-                right: 80px;
+                right: 30%;
     
             }
 
@@ -208,7 +214,7 @@ footer{
                 position:relative;
                 display: inline;
                 top: 140px;
-               left: 75px;
+                left: 40%;
             }
             
             #slogan{
@@ -216,11 +222,11 @@ footer{
             }
 
             #footerIndex{
-                position: fixed;
-                top: 1300px;
+                position:absolute;
+                top: 500px;
                 left: 550px;
-                display: inline;
-              font-size: small;   
+                display: none;
+                font-size: small;   
             }
      }   
 
@@ -236,19 +242,34 @@ footer{
      }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1000px) {
     #fotoPrincipalMobile{
         display: none;
     }
-    #footerIndex{
+
+    #catarsisNombreSlogan{
         position: relative;
-        top: 190px;
-        right: 500px;
-        display:block;
-        font-size: small;
+        top: 200px;
         
-    }
-}
+        }
+        #logoIndex{
+            position: relative;
+            display: block;
+            
+            margin-right: 800px;
+            margin-left: 200px;
+            text-align: center;
+        }
+
+        #footerIndex{
+           position: relative;
+           display: none;
+           margin-top: 20px; 
+           margin-right: ;
+           top: 260px;
+        }
+     }
+
 
 
 
@@ -696,7 +717,7 @@ footer{
 
 #menuCafeteria,
 #desayunoTitulo,
-#almuerzoTitul{
+#almuerzoTitulo{
     font-family: 'Quattrocento', serif;
     font-size: 60px;
     color: black;
@@ -902,6 +923,7 @@ footer{
 
 #formContacto{
     margin-top: 100px;  
+    margin-bottom: 100px;
     text-align: center;
 }
 
