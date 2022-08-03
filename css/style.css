@@ -69,7 +69,7 @@ background-color:#7B002C;
    z-index: 1;
    color:#7B002C;
    background-color:white
-}
+} 
 
 /*ENLACES DE LOS ITEMS DEL MENU DESPLEGABLE*/
 #menu ul ul a{
@@ -183,18 +183,12 @@ text-align: center;
 }
 
 #menuIndex{
-    display: flex ;
-    flex-direction: row;
-    justify-content:flex-start;
-    flex-wrap: nowrap;
-    justify-content:baseline;
-    margin-top: 10px;
-    margin-left: 0px;  
-    margin-right: 580px;
-    width: 100%;
+ margin-right: 500px;   
+    
+    
 }
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 990px){
     #bodyIndex{
         background-image: none;
         background-size:75%;
@@ -213,7 +207,7 @@ text-align: center;
             #logoIndex{
                 position:relative;
                 display: inline;
-                top: 140px;
+                top: 100px;
                 left: 40%;
             }
             
@@ -242,7 +236,7 @@ text-align: center;
      }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 995px) {
     #fotoPrincipalMobile{
         display: none;
     }
@@ -276,20 +270,21 @@ text-align: center;
 
 /*MENU DE LOS HTML con logo*/
 
-#menuAbout{
-    
-    display: flex ;
-    flex-direction: row;
-    justify-content:flex-start;
-    flex-wrap: nowrap;
-    justify-content:baseline;
-    margin-top: 10px;
-    margin-left: 30px;  
-}
 
 #fotoLogo{
+    margin-top: 15px;
     margin-right: 15px;
+    margin-left: 15px;
 }
+
+#menuDesplegable{
+    width: 194px;
+}
+
+.dropdown-menu{
+    width: 195px;
+}
+
 
 
 
@@ -471,8 +466,7 @@ font-size: 16px;
 }
 
 #fotoSobreNosotros,
-#fotoPorqueCatarsis,
-#menu {
+#fotoPorqueCatarsis {
     display: none;
 }
 
@@ -532,9 +526,6 @@ display: none;
     display: block;
 }
 
-#menu {
-    display: none;
-}
 
 #fotoSobreNosotros,
 #fotoPorqueCatarsis{
@@ -585,8 +576,7 @@ display: block;
 
 @media screen and (min-width: 1100px){
     #fotoSobreNosotros,
-    #fotoPorqueCatarsis,
-    #menu{
+    #fotoPorqueCatarsis{
         display: block;
     }
 
@@ -607,7 +597,7 @@ display: block;
 
     #sobreNosotros{
         display: grid;
-        height: 850px;
+        height: 900px;
         grid-template-columns: 60% auto;
         grid-template-rows: 20% auto;
         grid-template-areas: "tituloPrimero tituloPrimero" "textoSobreNosotros fotoSobreNosotros";
@@ -688,43 +678,39 @@ footer{
     grid-area: footer;
 }
 
-
+/*FOOTER GENERAL*/
+footer{
+    height: 150px; 
+}
+#espacio{
+    height: 5px;
+    background-color: #7B002C;
+}
 
 /*MENU*/
+
+
 #menuCompleto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-top: 180px;
-    background-color: #832042;
-    width: 100%;   
-}
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 150px;
 
-#Cafe{
-    margin-top: 150px;
-    margin-bottom: 100px;
-}
+} 
 
-#bloqueDesayuno{
-    margin-bottom: 100px;
-}
-
-#bloqueAlmuerzo{
-    margin-bottom: 100px;
-}
-
-#menuCafeteria,
-#desayunoTitulo,
-#almuerzoTitulo{
-    font-family: 'Quattrocento', serif;
-    font-size: 60px;
-    color: black;
-    background-color:white;
+#tituloMenu{
     text-align: center;
-    width: 100%;
+    font-family: 'Quattrocento', serif;
+    font-size: 70px;
+    margin-bottom: 50px;
+   color: #F0F2A6;
+   background-color:#7B002C;
 }
+
+#botonMenu{
+
+}
+
 
 
 /*RESPONSIVE MENU*/
@@ -756,57 +742,23 @@ footer{
         color: black;
     }
 
-    #almuerzoTitulo{
-        font-size: 40px;
-        width: 90%;
-    }
-
-    #desayunoTitulo, 
-    #menuCafeteria{
-        font-size: 40px;
-    }
-
-    #fotoBloqueAlmuerzo{
-        height: 300px;
-        width: 90%; 
-    }
-
-    #bloqueAlmuerzo{
-        margin-left: 9%;
-    }
-    
-    
-    #desayunoTitulo,
-    #menuCafeteria{
-        width: 90%;
-    }
+    #tituloMenu{
+        text-align: center;
+        justify-content: center;
+        font-family: 'Quattrocento', serif;
+        font-size: 50px;
+        margin-bottom: 50px;
+        color: #7B002C;
+    } 
 }
 
 @media screen and (min-width: 360px){
-    #fotoBloqueDesayuno{
-        height: 400px;
-        width: 90%;  
-    }
-    
-      
-    #fotoMenuCafeteria{
-            height: 400px;
-            width: 90%;
-    }
+  
 }
 
 
 @media screen and (min-width: 768px){
-    #fotoBloqueAlmuerzo{
-        height: 400px;
-        width: 100%; 
-    }   
-
-    #fotoBloqueDesayuno,
-    #fotoMenuCafeteria{
-        height: 500px;
-        width: 100%;   
-    }
+    
 }
 
 
@@ -925,69 +877,50 @@ footer{
     margin-top: 100px;  
     margin-bottom: 100px;
     text-align: center;
+    width: 500px;
 }
 
 #bloqueForm{
     display: flex;
-    align-content: center;
-    justify-content: center;
+    align-content:flex-start;
+    justify-content:center;
     background-color: #832042;
     height: auto;
     margin-top: 80px;
 }
 
-#nombreCompleto,
-#mailCompleto,
-#telefonoCompleto,
-#mensajeCompleto{
-    font-size: 20px;
+#tituloContacto{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Quattrocento', serif;
+    font-weight: bold;
+    color:#7B002C;
+    background-color: #F0F2A6;
+}
+
+#formulario{
     color: white;
+    font-size: 18px;
     font-family: 'Gentium Book Plus', serif;
-    margin-right: 2%;
-    margin-left: 2%;
 }
 
-#botonEnviar{
-    width: 70px;
-    height: 30px;
-    font-size: 15px;
-    margin-top: 30px;
-    margin-right: auto;
-    margin-bottom: 10px;
-   margin-left: 440px;
+#boton{
+    margin-top: 10px;
+    background-color: #F0F2A6;
+    color: #7B002C;
+    font-weight: bold;
 }
 
-#casillaMensaje{
-    height: 100px;
-    width: 55%;
-}
 
-.casillaCompletar,
-#casillaNombre,
-#casillaMail
-{
-    height: 10%;
-    width: 55%;
-}
+
 
 @media screen and (max-width: 530px){
-    #casillaMensaje,
-    .casillaCompletar,
-    #casillaNombre,
-    #casillaMail {
-        width: auto;
-    }
+
 
     #contactateConNosotros{
         font-size: 30px;
     }
 
-    #botonEnviar{
-        
-        margin-right: 2%;
-        margin-bottom: 5%;
-        margin-left: 50%;
-    }
 }
 
 @media screen and (max-width: 768px){
@@ -1068,8 +1001,12 @@ footer{
 }
 
 
+
+
 /*RESPONSIVE SHOP*/
-@media screen and (max-width: 768px){
+
+
+@media screen and (max-width: 900px){
 
     #encabezadoMobile{
         background-color: white;
@@ -1107,7 +1044,18 @@ footer{
             flex-wrap: nowrap;
             margin-top: 50px;
             width: 100%;
-        }   
+        } 
+
+        #tarjetaTaza,
+        #tarjetaPlatos{
+            margin-top: 30px;
+        }
+
+    
+        #tarjetaCafesVarios{
+            margin-top: 30px;
+            }
+        
 
         #fotoBlend{
             width:100%;
@@ -1128,10 +1076,8 @@ footer{
             height: 250px;
         }
 
-        .tazaTamaño,
-        .fotoPlatos{
-            margin-top: 40px; 
-        }
+      
+        
 
         #cafe-de-especialidad,
         #cafeteras,
@@ -1143,33 +1089,29 @@ footer{
 
     @media screen and (min-width: 360px){
         #fotoBlend{
-            width:100%;
-            height: 400px;
-            
+            width:auto;
+            height: 400px;    
         }
-
+       
         #fotoCafesVarios,
         #deGoteo{
             width:100%;
             height: 200px;
         }
 
+        
+        .tazaTamaño,
+        .fotoPlatos{
+            width: auto;
+            height: auto;
+        }
+        
+
         #italianas,
-        #francesas,
-        .tazaTamaño,
-        .fotoPlatos{
-            width: 100%;
-            height: 250px;
+        #francesas{
+            width: auto;
+            height: 350px;
         }
 
-        .tazaTamaño,
-        .fotoPlatos{
-            margin-top: 40px; 
-        }
-
-        #cafe-de-especialidad,
-        #cafeteras,
-        #vajilla{
-                font-size: 40px;
-            }  
+      
     }   
