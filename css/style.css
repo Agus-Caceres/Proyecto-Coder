@@ -69,7 +69,7 @@ background-color:#7B002C;
    z-index: 1;
    color:#7B002C;
    background-color:white
-}
+} 
 
 /*ENLACES DE LOS ITEMS DEL MENU DESPLEGABLE*/
 #menu ul ul a{
@@ -183,18 +183,12 @@ text-align: center;
 }
 
 #menuIndex{
-    display: flex ;
-    flex-direction: row;
-    justify-content:flex-start;
-    flex-wrap: nowrap;
-    justify-content:baseline;
-    margin-top: 10px;
-    margin-left: 0px;  
-    margin-right: 580px;
-    width: 100%;
+ margin-right: 500px;   
+    
+    
 }
 
-@media screen and (max-width: 999px){
+@media screen and (max-width: 990px){
     #bodyIndex{
         background-image: none;
         background-size:75%;
@@ -213,7 +207,7 @@ text-align: center;
             #logoIndex{
                 position:relative;
                 display: inline;
-                top: 140px;
+                top: 100px;
                 left: 40%;
             }
             
@@ -242,7 +236,7 @@ text-align: center;
      }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 995px) {
     #fotoPrincipalMobile{
         display: none;
     }
@@ -582,7 +576,7 @@ display: block;
 
 @media screen and (min-width: 1100px){
     #fotoSobreNosotros,
-    #fotoPorqueCatarsis,{
+    #fotoPorqueCatarsis{
         display: block;
     }
 
@@ -603,7 +597,7 @@ display: block;
 
     #sobreNosotros{
         display: grid;
-        height: 850px;
+        height: 900px;
         grid-template-columns: 60% auto;
         grid-template-rows: 20% auto;
         grid-template-areas: "tituloPrimero tituloPrimero" "textoSobreNosotros fotoSobreNosotros";
@@ -689,7 +683,7 @@ footer{
     height: 150px; 
 }
 #espacio{
-    height: 10px;
+    height: 5px;
     background-color: #7B002C;
 }
 
@@ -1010,7 +1004,9 @@ footer{
 
 
 /*RESPONSIVE SHOP*/
-@media screen and (max-width: 768px){
+
+
+@media screen and (max-width: 900px){
 
     #encabezadoMobile{
         background-color: white;
@@ -1050,6 +1046,11 @@ footer{
             width: 100%;
         } 
 
+        #tarjetaTaza,
+        #tarjetaPlatos{
+            margin-top: 30px;
+        }
+
     
         #tarjetaCafesVarios{
             margin-top: 30px;
@@ -1075,10 +1076,8 @@ footer{
             height: 250px;
         }
 
-        .tazaTamaño,
-        .fotoPlatos{
-            margin-top: 40px; 
-        }
+      
+        
 
         #cafe-de-especialidad,
         #cafeteras,
@@ -1100,16 +1099,19 @@ footer{
             height: 200px;
         }
 
-        #italianas,
-        #francesas,
+        
         .tazaTamaño,
         .fotoPlatos{
-            width: 100%;
-            height: 250px;
+            width: auto;
+            height: auto;
+        }
+        
+
+        #italianas,
+        #francesas{
+            width: auto;
+            height: 350px;
         }
 
-        .tazaTamaño,
-        .fotoPlatos{
-            margin-top: 40px; 
-        }
+      
     }   
