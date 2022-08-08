@@ -163,8 +163,9 @@ transition-duration: 0.5s;
 
 #footerIndex{
     grid-area: footer;
-    display: block;
-    margin-top: 580px;
+    position: fixed;
+    display: none;
+    margin-top: 240px;
     margin-right: 720px;
     font-size: small;
 }
