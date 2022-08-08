@@ -43,6 +43,12 @@
 #menu a:hover{
 color: white;
 background-color:#7B002C;
+transition-duration: 0.5s;
+}
+
+#menu a:active{
+    color: #7B002C;
+    background-color: white;
 }
 
 /*MENU DESPLEGABLE*/
@@ -906,7 +912,14 @@ footer{
     font-weight: bold;
 }
 
-
+#boton:hover{
+    background-color: #7B002C;
+    color: #F0F2A6;
+}
+#boton:active{
+    background-color:#F0F2A6;
+    color:#7B002C;
+}
 
 
 @media screen and (max-width: 530px){
@@ -995,7 +1008,15 @@ footer{
     margin-bottom: 100px;   
 }
 
+.card-body a:hover{
+    background-color: #7B002C;
+    transition-duration: 0.5s;
+}
 
+.card-body a:active{
+    background-color:aquamarine;
+    color: black;
+}
 
 
 /*RESPONSIVE SHOP*/
