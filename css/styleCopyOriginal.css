@@ -1,0 +1,1134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+   
+ #bodyIndex{
+    background-image: url(../images/foto-principal.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white; 
+ }   
+    
+ /*ESTILOS GENERALES-ESTRUCTURA BASICA*/
+ #menu ul{
+    list-style: none; 
+    font-size: 100px;  
+
+}
+
+/*ENLACES DEL MENU*/
+
+
+#menu ul a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: flex-start;
+    align-items: center;
+    color: #7B002C;
+    text-decoration: none;
+    font-weight: 900px;
+    font-size: 18px;
+    padding: 10px 50px 10px 50px;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/*EFECTO AL PASAR EL MOUSE POR EL MENU*/
+#menu a:hover{
+color: white;
+background-color:#7B002C;
+transition-duration: 0.5s;
+}
+
+#menu a:active{
+    color: #7B002C;
+    background-color: white;
+}
+
+/*MENU DESPLEGABLE*/
+
+
+/*ITEMS DEL MENU DESPLEGABLE*/
+#menu ul ul li{
+    width: 148px;
+   z-index: 1;
+   color:#7B002C;
+   background-color:white;
+} 
+
+/*ENLACES DE LOS ITEMS DEL MENU DESPLEGABLE*/
+#menu ul ul a{
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: left;
+    
+}
+
+/*ITEMS DEL MENU DESPLEGABLE AL PASAR EL MOUSE*/
+#menu ul li:hover ul{
+    display: block;
+}
+
+
+
+
+/*ITEMS DEL SUBMENU DESPLEGABLE*/
+/*#menu ul ul ul li{
+    right: -140px;
+    top: 0px;
+    left: 0;
+}
+  
+
+/*ENLACES DE LOS ITEMS DEL SUBMENU DESPLEGABLE*/
+/*#menu ul ul ul a{
+    padding-top: 10px;
+    padding-right: 15px;  
+}*/
+
+
+/*ITEMS DEL SUBMENU DESPLEGABLE AL PASAR EL MOUSE*/
+/*#menu ul ul li ul:hover li{
+    display:block;
+}*/
+
+
+
+/*INDEX*/
+/*ACOMODAR LOGO Y SLOGAN*/
+#catarsisNombreSlogan{
+    position: relative;
+    top: 200px;
+    right: 300px;
+    text-align: center;
+    }
+
+#nombreMarca,
+#sloganS{
+    font-family: 'Quattrocento', serif;
+    font-size: 50px;
+    display: block;
+    margin-right: 0%;
+    margin-left: 0px; 
+}
+
+
+#slogan{
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 18px;
+    display: block;
+    margin-right: 0%;
+    margin-left: 0px;
+  
+}
+
+#logoIndex{
+    position: fixed;
+    display: block;
+    top: 190px;
+    
+}
+
+#menu{
+    grid-area: menu;
+ }
+
+ #fotoPrincipalMobile{
+    grid-area: fotoPrincipalMobile;
+    height: 1150px;
+    align-items: center;
+    top: 150px;
+    width: 100%;
+ }
+
+ #fotoPrincipalIndex{
+    grid-area: fotoPrincipalIndex;
+    height: 1150px;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 60px;
+ }
+
+ #bloqueNsi{
+    grid-area: bloqueNsi;
+    display: flex;
+    flex-direction: column;
+}
+
+#footerIndex{
+    grid-area: footer;
+    position: fixed;
+    display: none;
+    margin-top: 240px;
+    margin-right: 720px;
+    font-size: small;
+}
+
+#menuIndex{
+ margin-right: 400px;   
+}
+
+.navbar-toggler-icon{
+    width: 50px;
+    height: 50px;
+}
+
+#botonMenuMobile{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#estilosBotonMenu{
+    margin-top: 15px;
+}
+@media screen and (max-width: 990px){
+    #bodyIndex{
+        background-image:none;
+        background-size:100%;
+        }
+
+            
+            #slogan{
+                display: none; 
+            }
+
+            #footerIndex{
+                position:absolute;
+                top: 500px;
+                left: 550px;
+                display: none;
+                font-size: small;   
+            }
+            
+            #nombreMarca{
+                font-family: 'Quattrocento', serif;
+                font-size: 100px;
+                top: 10px;
+            }
+
+            #logoIndex{
+                top: 0px;
+                
+            }
+
+    /*GRILLA INDEX SECCIONES MOBILE*/
+    #bodyIndex{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 5% 10% auto;
+        grid-template-areas: "menuIndex" "catarsisNombreSlogan" "fotoPrincipalMobile";
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-items: center;
+     }
+
+     #fotoPrincipalMobile{
+        width: 100%;  
+        margin-top: 20%;
+     }
+     
+    #catarsisNombreSlogan{
+        position:fixed;
+        top: 1%;
+        justify-content: center;
+        text-align: center;
+        right: 30%;
+        margin-bottom: 20px;
+        font-weight:bold;
+        left: 270px;
+        right: 500px;
+        }
+    #fotoLogoIndex{
+        display: none;  
+    }
+     }   
+
+   
+
+
+@media screen and (min-width: 991px) {
+    #fotoPrincipalMobile{
+        display: none;
+    }
+        
+       }
+       #logoIndex{
+        position: relative;
+        display: block;
+        margin-right: 800px;
+        margin-left: 200px;
+        text-align: center;
+    }
+
+        
+    #bloqueNsi{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+     
+   
+
+/*MENU DE LOS HTML con logo*/
+#fotoLogo{
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#menuDesplegable{
+    width: 194px;
+    margin-top: 0%;
+}
+
+.dropdown-menu{
+    width: 195px;
+}
+
+
+/*ENCABEZADO FOTO de los html*/
+#encabezado1{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 95%;
+    height:70%;
+    margin-top: 60px;
+    z-index: 0;
+    
+}
+
+/*TITULOS ABOUT*/
+#tituloPrimero{
+   text-align: center;
+   font-family: 'Quattrocento', serif;
+   font-size: 70px;
+   padding: 40px;
+   margin-bottom: 10px;
+   color: white;
+}
+
+#textoSobreNosotros{
+margin-left: 60px;
+color: white;
+font-family: 'Gentium Book Plus', serif;
+font-size: 16px;
+}
+
+#bloqueSobreNosotros{
+    background-color: #832042;
+    margin-top: 100px;
+}
+
+#tituloSegundo{
+    text-align: center;
+       font-family: 'Quattrocento', serif;
+       font-size: 70px;
+       margin-bottom: 10px;
+       padding: 40px;
+       color: black;
+    }
+
+#section{
+    margin-left: 60px;
+    height: 300px;
+    color:black;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 16px;  
+    }
+
+#parrafoDosCatarsis{
+    margin-top: 20px;
+}
+
+#parrafoTresCatarsis{
+    margin-top: 20px;
+}
+
+#parrafoCuatroCatarsis{
+    margin-top: 20px;
+}
+
+#queEstasEsperando{
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-family: 'Quattrocento', serif;
+    text-align: center;
+    background-color: #832042;
+    color: white;
+    padding: 20px;
+    transition-delay: 4s;
+}
+
+#logoFooter{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#footerGeneral{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+#copyright{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+#principioPagina{
+    text-decoration: none;
+}
+
+/*RESPONSIVE ABOUT*/
+
+
+@media screen and (max-width: 768px){
+
+#encabezado1{
+      display: none;
+}
+
+#encabezadoMobile{
+    background-color: white;
+    max-width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    justify-content:center;
+    
+} 
+
+#tituloMobile{
+    display: flex;
+    justify-content: center;
+    font-family: 'Quattrocento', serif;
+    font-size: 30px; 
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+#decoracionMobile{
+    text-decoration: none;
+    color: black;
+}
+
+#sobreNosotros {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% auto;
+    grid-template-areas: "tituloPrimero" "textoSobreNosotros" ;
+    row-gap: 20px;  
+}   
+
+#porqueCatarsis {
+    display: grid;
+    height: 580px;
+    grid-template-columns: auto;
+    grid-template-rows: 20% auto;
+    grid-template-areas: "tituloSegundo" "sectionPorqueCatarsis";
+    row-gap: 20px;  
+}   
+
+#tituloPrimero {
+    font-size: 55px;
+    padding: 15px;
+    margin-bottom: 5px;
+    text-align:center;
+}
+
+#tituloSegundo {
+    font-size: 45px;
+    padding: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#textoSobreNosotros,
+#section{
+    font-size: 14px;
+    text-align:justify;
+    margin-right: 60px;
+}
+
+#section{
+    margin-top: 15px;
+}
+
+#fotoSobreNosotros,
+#fotoPorqueCatarsis {
+    display: none;
+}
+
+#queEstasEsperando,
+#copyright{
+    font-size: 12px;
+}
+
+
+#logoFooter, 
+#principioPagina{
+display: none;
+}  
+
+}
+
+@media screen and (min-width: 430px) and (max-width: 768px){
+    
+    #fotoEncabezadoMobile{
+        display: none;
+    }
+
+    #encabezado1{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        width: 95%;
+        height:70%;
+        margin-top: 60px;
+        z-index: 0;
+        }
+   }     
+
+/*GRILLA SOBRE NOSOTROS*/
+
+@media screen and (min-width: 769px) {
+    
+#encabezadoMobile{
+    display: none;
+}
+
+#tituloMobile{
+    display: flex;
+    justify-content: center;
+    font-family: 'Quattrocento', serif;
+    font-size: 30px; 
+    font-weight: bold;
+    margin-top: 40px;  
+}
+
+#decoracionMobile{
+    text-decoration: none;
+    color: black;
+}
+
+#encabezado1{
+    display: block;
+}
+
+
+#fotoSobreNosotros,
+#fotoPorqueCatarsis{
+    display: none;
+}
+
+#logoFooter, 
+#principioPagina{
+display: block;
+}  
+
+
+#tituloPrimero {
+    font-size: 55px;
+    padding: 15px;
+    margin-bottom: 5px;
+    text-align:center;
+}
+
+#tituloSegundo {
+    font-size: 45px;
+    padding: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-align: center;
+} 
+
+#sobreNosotros {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% auto;
+    grid-template-areas: "tituloPrimero" "textoSobreNosotros" ;
+    row-gap: 20px; 
+    margin-top: 2%; 
+    margin-right:10%;
+}   
+    
+#porqueCatarsis {
+    display: grid;
+    height: 580px;
+    grid-template-columns: auto;
+    grid-template-rows: 20% auto;
+    grid-template-areas: "tituloSegundo" "sectionPorqueCatarsis";
+    row-gap: 20px;  
+    margin-right: 2%;
+}   
+}
+
+@media screen and (min-width: 1100px){
+    #fotoSobreNosotros,
+    #fotoPorqueCatarsis{
+        display: block;
+    }
+
+    #tituloMobile{
+        display: none;
+    }
+
+    #textoSobreNosotros,
+    #section{
+        font-size: 18px;
+        text-align:justify;
+        margin-right: 60px;
+    }
+    
+    #section{
+        margin-top: 15px;
+    }
+
+    #sobreNosotros{
+        display: grid;
+        height: 900px;
+        grid-template-columns: 60% auto;
+        grid-template-rows: 20% auto;
+        grid-template-areas: "tituloPrimero tituloPrimero" "textoSobreNosotros fotoSobreNosotros";
+        column-gap: 20px;
+        row-gap: 20px; 
+        justify-items: center;
+    }
+
+    #porqueCatarsis{
+        display: grid;
+        height: 550px;
+        grid-template-columns: 60% auto;
+        grid-template-rows: 20% auto;
+        grid-template-areas: "tituloSegundo tituloSegundo" "sectionPorqueCatarsis fotoPorqueCatarsis";
+        column-gap: 20px;
+        row-gap: 20px; 
+        justify-items: center;
+        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+
+    #tituloPrimero {
+        font-size: 70px;
+        padding: 15px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+        text-align:center;
+    }
+    
+    #tituloSegundo {
+        font-size: 70px;
+        padding: 20px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+        text-align: center;
+    }
+  
+}
+
+
+/*GRILLA ABOUT*/
+
+section #tituloPrimero{
+    grid-area: tituloPrimero;
+}
+
+section #textoSobreNosotros{
+    grid-area: textoSobreNosotros;
+    align-items: flex-start;
+}
+
+section #fotoSobreNosotros{
+    grid-area: fotoSobreNosotros;
+}
+
+section #bloquePorqueCatarsis{
+    grid-area: bloquePorqueCatarsis;
+}
+
+section #tituloSegundo{
+    grid-area: tituloSegundo;
+}
+
+section #section{
+    grid-area: sectionPorqueCatarsis;
+}
+
+section #fotoPorqueCatarsis{
+    grid-area: fotoPorqueCatarsis;
+   
+}
+
+section #bloqueQueEstasEsperando{
+    grid-area: bloqueQueEstasEsperando;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/*FOOTER GENERAL*/
+footer{
+    height: 150px; 
+}
+#espacio{
+    height: 5px;
+    background-color: #7B002C;
+}
+
+/*MENU*/
+
+
+#menuCompleto{
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 150px;
+
+} 
+
+#tituloMenu{
+    text-align: center;
+    font-family: 'Quattrocento', serif;
+    font-size: 70px;
+    margin-bottom: 50px;
+   color: #F0F2A6;
+   background-color:#7B002C;
+}
+
+
+
+
+
+/*RESPONSIVE MENU*/
+@media screen and (max-width: 768px){
+
+    #encabezadoMobile{
+        background-color: white;
+        max-width: 100%;
+        margin-top: 40px;
+        text-align: center;
+        justify-content:center;
+        width: 100%;
+        
+    } 
+    
+    #tituloMobile{
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        font-family: 'Quattrocento', serif;
+        font-size: 30px; 
+        font-weight: bold;
+       
+        width: 100%;
+    }
+    
+    #decoracionMobile{
+        text-decoration: none;
+        color: black;
+    }
+
+    #tituloMenu{
+        text-align: center;
+        justify-content: center;
+        font-family: 'Quattrocento', serif;
+        font-size: 50px;
+        margin-bottom: 50px;
+        color: #F0F2A6;
+    } 
+}
+
+@media screen and (min-width: 360px){
+  
+}
+
+
+@media screen and (min-width: 768px){
+    
+}
+
+
+
+/*ENVIOS*/
+#tituloEnvios{
+    font-family:  'Quattrocento', serif;
+    font-size: 40px;
+    color:white;
+    background-color:#832042;
+    text-align: center;
+    margin-top: 100px;
+    padding: 10%;
+}
+
+#bloqueEnvios{
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+#sectionEnvios{
+    height: 900px;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+.preguntaEnvios{
+    font-size: 18px;
+}
+
+.parrafoEnvios{
+    margin-bottom: 20px;
+}
+
+/*GRID ENVIOS*/
+@media screen and (max-width: 768px){
+
+    #encabezadoMobile{
+        background-color: white;
+        max-width: 100%;
+        margin-top: 40px;
+        text-align: center;
+        justify-content:center;
+        
+    } 
+    
+    #tituloMobile{
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        font-family: 'Quattrocento', serif;
+        font-size: 30px; 
+        font-weight: bold;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    #decoracionMobile{
+        text-decoration: none;
+        color: black;
+        }
+
+        #sectionEnvios{
+            height: auto;
+            font-family: 'Gentium Book Plus', serif;
+        }
+
+        #bloqueEnvios{
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-bottom: 10%;
+        }
+
+        
+        #sectionEnviosFooter{
+        display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: "tituloEnvios" "bloqueEnvios" "footerEnvios";
+            row-gap: 50px;
+            column-gap: 10px;
+            margin-bottom: 80px;
+            margin-top: 40px;
+        }
+
+    #tituloEnvios{
+        font-size: 30px;
+        padding: 10%;
+    }
+
+    #tituloEnvios{
+    grid-area: tituloEnvios;
+    }
+
+    #bloqueEnvios{
+    grid-area: bloqueEnvios;
+    }
+
+    #footerEnvios{
+    grid-area: footerEnvios;
+    }
+
+}
+
+
+/*CONTACT US*/
+#contactateConNosotros{
+    text-align: center;
+    font-family: 'Quattrocento', serif;
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    padding: 0%;
+}
+
+#formContacto{
+    margin-top: 100px;  
+    margin-bottom: 100px;
+    text-align: center;
+    width: 500px;
+}
+
+#bloqueForm{
+    display: flex;
+    align-content:flex-start;
+    justify-content:center;
+    background-color: #832042;
+    height: auto;
+    margin-top: 80px;
+}
+
+#tituloContacto{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Quattrocento', serif;
+    font-weight: bold;
+    color:#7B002C;
+    background-color: #F0F2A6;
+}
+
+#formulario{
+    color: white;
+    font-size: 18px;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+#boton{
+    margin-top: 10px;
+    background-color: #F0F2A6;
+    color: #7B002C;
+    font-weight: bold;
+}
+
+#boton:hover{
+    background-color: #7B002C;
+    color: #F0F2A6;
+}
+#boton:active{
+    background-color:#F0F2A6;
+    color:#7B002C;
+}
+
+
+@media screen and (max-width: 530px){
+
+
+    #contactateConNosotros{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    #encabezadoMobile{
+        background-color: white;
+        max-width: 100%;
+        margin-top: 40px;
+        text-align: center;
+        justify-content:center;
+        
+    } 
+    
+    #tituloMobile{
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        font-family: 'Quattrocento', serif;
+        font-size: 30px; 
+        font-weight: bold;
+        margin-top: 40px;
+        width: 100%;
+    }
+    
+    #decoracionMobile{
+        text-decoration: none;
+        color: black;
+        }
+        }
+
+
+
+/*SHOP*/
+
+/*TITULOS DEL SHOP*/
+
+#cafe-de-especialidad,
+#cafeteras,
+#vajilla{
+    font-family:  'Quattrocento', serif;
+    font-size: 60px;
+    color:white;
+    background-color:#832042;
+    text-align: center;
+    justify-items: center;
+    margin-top: 100px;
+    padding: 8%; 
+    width: auto;
+}
+
+#bloqueCafeDeEspecialidad,
+#bloqueCafeteras,
+#bloqueTazas,
+#bloquePlatosYBowls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 100px; 
+    width: auto;
+}
+
+.tituloProducto{
+    font-family:'Gentium Book Plus', serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    width: auto;
+
+}
+
+#bloqueTazas,
+#bloquePlatosYBowls{
+    margin-bottom: 100px;   
+}
+
+.card-body a:hover{
+    background-color: #7B002C;
+    transition-duration: 0.5s;
+}
+
+.card-body a:active{
+    background-color:aquamarine;
+    color: black;
+}
+
+
+/*RESPONSIVE SHOP*/
+
+
+@media screen and (max-width: 900px){
+
+    #encabezadoMobile{
+        background-color: white;
+        max-width: 100%;
+        margin-top: 40px;
+        text-align: center;
+        justify-content:center;
+        
+    } 
+    
+    #tituloMobile{
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        font-family: 'Quattrocento', serif;
+        font-size: 30px; 
+        font-weight: bold;
+        margin-top: 40px;
+        width: 100%;
+    }
+    
+    #decoracionMobile{
+        text-decoration: none;
+        color: black;
+        }
+
+        #bloqueCafeDeEspecialidad,
+        #bloqueCafeteras,
+        #bloqueTazas,
+        #bloquePlatosYBowls{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-top: 50px;
+            width: 100%;
+        } 
+
+        #tarjetaTaza,
+        #tarjetaPlatos{
+            margin-top: 30px;
+        }
+
+    
+        #tarjetaCafesVarios{
+            margin-top: 30px;
+            }
+        
+
+        #fotoBlend{
+            width:100%;
+            height: 400px;
+        }
+
+        #fotoCafesVarios,
+        #deGoteo{
+            width:100%;
+            height: 200px;
+        }
+
+        #italianas,
+        #francesas,
+        .tazaTamaño,
+        .fotoPlatos{
+            width: 100%;
+            height: 250px;
+        }
+
+      
+        
+
+        #cafe-de-especialidad,
+        #cafeteras,
+        #vajilla{
+                font-size: 40px;
+            }
+        }
+
+
+    @media screen and (min-width: 360px){
+        #fotoBlend{
+            width:auto;
+            height: 400px;    
+        }
+       
+        #fotoCafesVarios,
+        #deGoteo{
+            width:100%;
+            height: 200px;
+        }
+
+        
+        .tazaTamaño,
+        .fotoPlatos{
+            width: auto;
+            height: auto;
+        }
+        
+
+        #italianas,
+        #francesas{
+            width: auto;
+            height: 350px;
+        }
+
+      
+    }   

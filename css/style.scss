@@ -14,71 +14,68 @@
  }   
     
  /*ESTILOS GENERALES-ESTRUCTURA BASICA*/
- #menu ul{
-    list-style: none; 
-    font-size: 100px;  
-
+ #menu {
+	ul {
+		list-style: none;
+		font-size: 100px;
+	}
 }
 
 /*ENLACES DEL MENU*/
 
+$color_principal: #7B002C;
+$font-principal: 'Gentium Book Plus', serif;
 
-#menu ul a{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-items: flex-start;
-    align-items: center;
-    color: #7B002C;
-    text-decoration: none;
-    font-weight: 900px;
-    font-size: 18px;
-    padding: 10px 50px 10px 50px;
-    font-family: 'Gentium Book Plus', serif;
-    font-size: 20px;
-    margin-top: 20px;
+#menu {
+	ul {
+		a {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-items: flex-start;
+			align-items: center;
+			color: $color_principal;
+			text-decoration: none;
+			font-weight: 900px;
+			font-size: 18px;
+			padding: 10px 50px 10px 50px;
+			font-family: $font-principal;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+	}
 }
 
-
-/*ITEMS DEL MENU*/
-#menu ul li{
-    position: relative;
-    float: left;
-
-}
 
 /*EFECTO AL PASAR EL MOUSE POR EL MENU*/
 #menu a:hover{
 color: white;
 background-color:#7B002C;
+transition-duration: 0.5s;
+}
+
+#menu a:active{
+    color: #7B002C;
+    background-color: white;
 }
 
 /*MENU DESPLEGABLE*/
-#menu ul ul{
-    display: none;
-    position: absolute;
-    left: 0;
-}
+
 
 /*ITEMS DEL MENU DESPLEGABLE*/
 #menu ul ul li{
-    display: flex;
-    flex-direction: column;
-    justify-content:center ;
-    flex-wrap: nowrap;
-   width: 146px;
+    width: 148px;
    z-index: 1;
    color:#7B002C;
-   background-color:white
+   background-color:white;
 } 
 
 /*ENLACES DE LOS ITEMS DEL MENU DESPLEGABLE*/
 #menu ul ul a{
-    padding-top: 10px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 10px;
     text-align: left;
+    
 }
 
 /*ITEMS DEL MENU DESPLEGABLE AL PASAR EL MOUSE*/
@@ -87,12 +84,7 @@ background-color:#7B002C;
 }
 
 
-/*SUBMENU DESPLEGABLE*/
-#menu ul ul ul li{
-    display: none;
-    position: absolute;
-    
-}
+
 
 /*ITEMS DEL SUBMENU DESPLEGABLE*/
 /*#menu ul ul ul li{
@@ -119,15 +111,14 @@ background-color:#7B002C;
 /*INDEX*/
 /*ACOMODAR LOGO Y SLOGAN*/
 #catarsisNombreSlogan{
-position: relative;
-top: 200px;
-right: 300px;
-text-align: center;
-}
+    position: relative;
+    top: 200px;
+    right: 300px;
+    text-align: center;
+    }
 
- 
 #nombreMarca,
-#bloqueNsi{
+#sloganS{
     font-family: 'Quattrocento', serif;
     font-size: 50px;
     display: block;
@@ -160,8 +151,8 @@ text-align: center;
     grid-area: fotoPrincipalMobile;
     height: 1150px;
     align-items: center;
-    margin-top: 150px;
-    margin-left: 60px;
+    top: 150px;
+    width: 100%;
  }
 
  #fotoPrincipalIndex{
@@ -172,113 +163,129 @@ text-align: center;
     margin-left: 60px;
  }
 
-#bloqueNsi{
+ #bloqueNsi{
     grid-area: bloqueNsi;
+    display: flex;
+    flex-direction: column;
 }
 
 #footerIndex{
     grid-area: footer;
-    display: block;
-    margin-top: 580px;
+    position: fixed;
+    display: none;
+    margin-top: 240px;
     margin-right: 720px;
     font-size: small;
 }
 
 #menuIndex{
- margin-right: 600px;   
+ margin-right: 400px;   
 }
 
 .navbar-toggler-icon{
     width: 50px;
     height: 50px;
 }
+
+#botonMenuMobile{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#estilosBotonMenu{
+    margin-top: 15px;
+}
 @media screen and (max-width: 990px){
     #bodyIndex{
-        background-image: none;
+        background-image:none;
         background-size:100%;
         }
 
-            #nombreMarca{
-                font-family: 'Quattrocento', serif;
-                font-size: 80px;
-                display: inline;
-                position: fixed; 
-                align-items: center;
-                top: 100px;
-                right: 28%;
-    
-            }
-
-            #logoIndex{
-                position:relative;
-                display: inline;
-                align-items: center;
-                top: 100px;
-                left: 40%;
-            }
             
-            #slogan{
-                display: none; 
-            }
+    #slogan{
+        display: none; 
+        }
 
-            #footerIndex{
-                position:absolute;
-                top: 500px;
-                left: 550px;
-                display: none;
-                font-size: small;   
-            }
+    #footerIndex{
+        position:absolute;
+        top: 500px;
+        left: 550px;
+        display: none;
+        font-size: small;   
+        }
+            
+    #nombreMarca{
+        font-family: 'Quattrocento', serif;
+        font-size: 100px;
+        top: 10px;
+        }
 
-    
-     }   
+    #logoIndex{
+        top: 0px;
+                
+        }
 
     /*GRILLA INDEX SECCIONES MOBILE*/
-     #bodyIndex{
+    #bodyIndex{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 20% auto 10%;
-        grid-template-areas: "bloqueNsi" "fotoPrincipalMobile" "footer";
+        grid-template-rows: 5% 10% auto;
+        grid-template-areas: "menuIndex" "catarsisNombreSlogan" "fotoPrincipalMobile";
         column-gap: 20px;
-        row-gap: 20px; 
+        row-gap: 20px;
         justify-items: center;
      }
 
+     #fotoPrincipalMobile{
+        width: 100%;  
+        margin-top: 20%;
+     }
+     
+    #catarsisNombreSlogan{
+        position:fixed;
+        top: 1%;
+        justify-content: center;
+        text-align: center;
+        right: 30%;
+        margin-bottom: 20px;
+        font-weight:bold;
+        left: 270px;
+        right: 500px;
+        }
 
-@media screen and (min-width: 995px) {
+    #fotoLogoIndex{
+        display: none;  
+    }
+     }   
+
+   
+
+
+@media screen and (min-width: 991px) {
     #fotoPrincipalMobile{
         display: none;
     }
-
-    #catarsisNombreSlogan{
-        position: relative;
-        top: 200px;
         
-        }
-        #logoIndex{
-            position: relative;
-            display: block;
-            
-            margin-right: 800px;
-            margin-left: 200px;
-            text-align: center;
-        }
+       }
+       #logoIndex{
+        position: relative;
+        display: block;
+        margin-right: 800px;
+        margin-left: 200px;
+        text-align: center;
+    }
 
-        #footerIndex{
-           position: relative;
-           display: none;
-           margin-top: 20px; 
-           margin-right: ;
-           top: 260px;
-        }
-     }
-
-
-
-
+        
+    #bloqueNsi{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+     
+   
 
 /*MENU DE LOS HTML con logo*/
-
-
 #fotoLogo{
     margin-top: 15px;
     margin-right: 15px;
@@ -287,14 +294,12 @@ text-align: center;
 
 #menuDesplegable{
     width: 194px;
+    margin-top: 0%;
 }
 
 .dropdown-menu{
     width: 195px;
 }
-
-
-
 
 
 /*ENCABEZADO FOTO de los html*/
@@ -715,9 +720,7 @@ footer{
    background-color:#7B002C;
 }
 
-#botonMenu{
 
-}
 
 
 
@@ -741,7 +744,7 @@ footer{
         font-family: 'Quattrocento', serif;
         font-size: 30px; 
         font-weight: bold;
-        margin-top: 40px;
+       
         width: 100%;
     }
     
@@ -756,7 +759,7 @@ footer{
         font-family: 'Quattrocento', serif;
         font-size: 50px;
         margin-bottom: 50px;
-        color: #7B002C;
+        color: #F0F2A6;
     } 
 }
 
@@ -919,7 +922,14 @@ footer{
     font-weight: bold;
 }
 
-
+#boton:hover{
+    background-color: #7B002C;
+    color: #F0F2A6;
+}
+#boton:active{
+    background-color:#F0F2A6;
+    color:#7B002C;
+}
 
 
 @media screen and (max-width: 530px){
@@ -1008,7 +1018,15 @@ footer{
     margin-bottom: 100px;   
 }
 
+.card-body a:hover{
+    background-color: #7B002C;
+    transition-duration: 0.5s;
+}
 
+.card-body a:active{
+    background-color:aquamarine;
+    color: black;
+}
 
 
 /*RESPONSIVE SHOP*/
