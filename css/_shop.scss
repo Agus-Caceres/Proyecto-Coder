@@ -1,0 +1,170 @@
+/*SHOP*/
+
+/*TITULOS DEL SHOP*/
+
+#cafe-de-especialidad,
+#cafeteras,
+#vajilla{
+    font-family:  $font-titulos;
+    font-size: 60px;
+    color:white;
+    background-color:$color_principal_claro;
+    text-align: center;
+    justify-items: center;
+    margin-top: 100px;
+    padding: 8%; 
+    width: auto;
+}
+
+#bloqueCafeDeEspecialidad,
+#bloqueCafeteras,
+#bloqueTazas,
+#bloquePlatosYBowls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 100px; 
+    width: auto;
+}
+
+.tituloProducto{
+    font-family: $font-textos;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    width: auto;
+
+}
+
+#bloqueTazas,
+#bloquePlatosYBowls{
+    margin-bottom: 100px;   
+}
+
+.card-body a:hover{
+    background-color: $color_principal;
+    transition-duration: 0.5s;
+}
+
+.card-body a:active{
+    background-color:aquamarine;
+    color: black;
+}
+
+
+/*RESPONSIVE SHOP*/
+
+
+@media screen and (max-width: 900px){
+
+    #encabezadoMobile{
+        background-color: white;
+        max-width: 100%;
+        margin-top: 40px;
+        text-align: center;
+        justify-content:center;
+        
+    } 
+    
+    #tituloMobile{
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        font-family: $font-titulos;
+        font-size: 30px; 
+        font-weight: bold;
+        margin-top: 40px;
+        width: 100%;
+    }
+    
+    #decoracionMobile{
+        text-decoration: none;
+        color: black;
+        }
+
+        #bloqueCafeDeEspecialidad,
+        #bloqueCafeteras,
+        #bloqueTazas,
+        #bloquePlatosYBowls{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-top: 50px;
+            width: 100%;
+        } 
+
+        #tarjetaTaza,
+        #tarjetaPlatos{
+            margin-top: 30px;
+        }
+
+    
+        #tarjetaCafesVarios{
+            margin-top: 30px;
+            }
+        
+
+        #fotoBlend{
+            width:100%;
+            height: 400px;
+        }
+
+        #fotoCafesVarios,
+        #deGoteo{
+            width:100%;
+            height: 200px;
+        }
+
+        #italianas,
+        #francesas,
+        .tazaTamaño,
+        .fotoPlatos{
+            width: 100%;
+            height: 250px;
+        }
+
+      
+        
+
+        #cafe-de-especialidad,
+        #cafeteras,
+        #vajilla{
+                font-size: 40px;
+            }
+        }
+
+
+    @media screen and (min-width: 360px){
+        #fotoBlend{
+            width:auto;
+            height: 400px;    
+        }
+       
+        #fotoCafesVarios,
+        #deGoteo{
+            width:100%;
+            height: 200px;
+        }
+
+        
+        .tazaTamaño,
+        .fotoPlatos{
+            width: auto;
+            height: auto;
+        }
+        
+
+        #italianas,
+        #francesas{
+            width: auto;
+            height: 350px;
+        }
+
+      
+    }   

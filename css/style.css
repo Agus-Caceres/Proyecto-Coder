@@ -4,273 +4,6 @@
   padding: 0;
 }
 
-#bodyIndex {
-  background-image: url(../images/foto-principal.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: white;
-}
-
-/*ESTILOS GENERALES-ESTRUCTURA BASICA*/
-#menu ul {
-  list-style: none;
-  font-size: 100px;
-}
-
-/*ENLACES DEL MENU*/
-#menu ul a {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-items: flex-start;
-  align-items: center;
-  color: #7B002C;
-  text-decoration: none;
-  font-weight: 900px;
-  font-size: 18px;
-  padding: 10px 50px 10px 50px;
-  font-family: "Gentium Book Plus", serif;
-  font-size: 20px;
-  margin-top: 20px;
-}
-
-/*EFECTO AL PASAR EL MOUSE POR EL MENU*/
-#menu a:hover {
-  color: white;
-  background-color: #7B002C;
-  transition-duration: 0.5s;
-}
-
-#menu a:active {
-  color: #7B002C;
-  background-color: white;
-}
-
-/*MENU DESPLEGABLE*/
-/*ITEMS DEL MENU DESPLEGABLE*/
-#menu ul ul li {
-  width: 148px;
-  z-index: 1;
-  color: #7B002C;
-  background-color: white;
-}
-
-/*ENLACES DE LOS ITEMS DEL MENU DESPLEGABLE*/
-#menu ul ul a {
-  padding-right: 15px;
-  padding-left: 15px;
-  text-align: left;
-}
-
-/*ITEMS DEL MENU DESPLEGABLE AL PASAR EL MOUSE*/
-#menu ul li:hover ul {
-  display: block;
-}
-
-/*ITEMS DEL SUBMENU DESPLEGABLE*/
-/*#menu ul ul ul li{
-    right: -140px;
-    top: 0px;
-    left: 0;
-}
-
-
-/*ENLACES DE LOS ITEMS DEL SUBMENU DESPLEGABLE*/
-/*#menu ul ul ul a{
-    padding-top: 10px;
-    padding-right: 15px;  
-}*/
-/*ITEMS DEL SUBMENU DESPLEGABLE AL PASAR EL MOUSE*/
-/*#menu ul ul li ul:hover li{
-    display:block;
-}*/
-/*INDEX*/
-/*ACOMODAR LOGO Y SLOGAN*/
-#catarsisNombreSlogan {
-  position: relative;
-  top: 200px;
-  right: 300px;
-  text-align: center;
-}
-
-#nombreMarca,
-#sloganS {
-  font-family: "Quattrocento", serif;
-  font-size: 50px;
-  display: block;
-  margin-right: 0%;
-  margin-left: 0px;
-}
-
-#slogan {
-  font-family: "Gentium Book Plus", serif;
-  font-size: 18px;
-  display: block;
-  margin-right: 0%;
-  margin-left: 0px;
-}
-
-#logoIndex {
-  position: fixed;
-  display: block;
-  top: 190px;
-}
-
-#menu {
-  grid-area: menu;
-}
-
-#fotoPrincipalMobile {
-  grid-area: fotoPrincipalMobile;
-  height: 1150px;
-  align-items: center;
-  top: 150px;
-  width: 100%;
-}
-
-#fotoPrincipalIndex {
-  grid-area: fotoPrincipalIndex;
-  height: 1150px;
-  align-items: center;
-  margin-top: 150px;
-  margin-left: 60px;
-}
-
-#bloqueNsi {
-  grid-area: bloqueNsi;
-  display: flex;
-  flex-direction: column;
-}
-
-#footerIndex {
-  grid-area: footer;
-  position: fixed;
-  display: none;
-  margin-top: 240px;
-  margin-right: 720px;
-  font-size: small;
-}
-
-#menuIndex {
-  margin-right: 400px;
-}
-
-.navbar-toggler-icon {
-  width: 50px;
-  height: 50px;
-}
-
-#botonMenuMobile {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#estilosBotonMenu {
-  margin-top: 15px;
-}
-
-@media screen and (max-width: 990px) {
-  #bodyIndex {
-    background-image: none;
-    background-size: 100%;
-  }
-  #slogan {
-    display: none;
-  }
-  #footerIndex {
-    position: absolute;
-    top: 500px;
-    left: 550px;
-    display: none;
-    font-size: small;
-  }
-  #nombreMarca {
-    font-family: "Quattrocento", serif;
-    font-size: 100px;
-    top: 10px;
-  }
-  #logoIndex {
-    top: 0px;
-  }
-  /*GRILLA INDEX SECCIONES MOBILE*/
-  #bodyIndex {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 5% 10% auto;
-    grid-template-areas: "menuIndex" "catarsisNombreSlogan" "fotoPrincipalMobile";
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-    row-gap: 20px;
-    justify-items: center;
-  }
-  #fotoPrincipalMobile {
-    width: 100%;
-    margin-top: 20%;
-  }
-  #catarsisNombreSlogan {
-    position: fixed;
-    top: 1%;
-    justify-content: center;
-    text-align: center;
-    right: 30%;
-    margin-bottom: 20px;
-    font-weight: bold;
-    left: 270px;
-    right: 500px;
-  }
-  #fotoLogoIndex {
-    display: none;
-  }
-}
-@media screen and (min-width: 991px) {
-  #fotoPrincipalMobile {
-    display: none;
-  }
-}
-#logoIndex {
-  position: relative;
-  display: block;
-  margin-right: 800px;
-  margin-left: 200px;
-  text-align: center;
-}
-
-#bloqueNsi {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-}
-
-/*MENU DE LOS HTML con logo*/
-#fotoLogo {
-  margin-top: 15px;
-  margin-right: 15px;
-  margin-left: 15px;
-}
-
-#menuDesplegable {
-  width: 194px;
-  margin-top: 0%;
-}
-
-.dropdown-menu {
-  width: 195px;
-}
-
-/*ENCABEZADO FOTO de los html*/
-#encabezado1 {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  width: 95%;
-  height: 70%;
-  margin-top: 60px;
-  z-index: 0;
-}
-
 /*TITULOS ABOUT*/
 #tituloPrimero {
   text-align: center;
@@ -434,7 +167,25 @@
     display: none;
   }
 }
+@media screen and (min-width: 1000px) and (max-width: 1099px) {
+  #tituloMobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 429px) {
+  #fotoEncabezado {
+    display: none;
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1099px) {
+  #decoracionMobile {
+    display: none;
+  }
+}
 @media screen and (min-width: 430px) and (max-width: 768px) {
+  #fotoEncabezadoMobile {
+    display: none;
+  }
   #fotoEncabezadoMobile {
     display: none;
   }
@@ -612,55 +363,6 @@ footer {
   background-color: #7B002C;
 }
 
-/*MENU*/
-#menuCompleto {
-  width: 80%;
-  margin: auto;
-  margin-top: 200px;
-  margin-bottom: 150px;
-}
-
-#tituloMenu {
-  text-align: center;
-  font-family: "Quattrocento", serif;
-  font-size: 70px;
-  margin-bottom: 50px;
-  color: #F0F2A6;
-  background-color: #7B002C;
-}
-
-/*RESPONSIVE MENU*/
-@media screen and (max-width: 768px) {
-  #encabezadoMobile {
-    background-color: white;
-    max-width: 100%;
-    margin-top: 40px;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-  }
-  #tituloMobile {
-    display: flex;
-    text-align: center;
-    justify-items: center;
-    font-family: "Quattrocento", serif;
-    font-size: 30px;
-    font-weight: bold;
-    width: 100%;
-  }
-  #decoracionMobile {
-    text-decoration: none;
-    color: black;
-  }
-  #tituloMenu {
-    text-align: center;
-    justify-content: center;
-    font-family: "Quattrocento", serif;
-    font-size: 50px;
-    margin-bottom: 50px;
-    color: #F0F2A6;
-  }
-}
 /*ENVIOS*/
 #tituloEnvios {
   font-family: "Quattrocento", serif;
@@ -685,6 +387,7 @@ footer {
 
 .preguntaEnvios {
   font-size: 18px;
+  font-weight: bolder;
 }
 
 .parrafoEnvios {
@@ -970,5 +673,312 @@ footer {
 #francesas {
     width: auto;
     height: 350px;
+  }
+}
+#bodyIndex {
+  background-image: url(../images/foto-principal.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: white;
+}
+
+/*ESTILOS GENERALES-ESTRUCTURA BASICA*/
+#menu ul {
+  list-style: none;
+  font-size: 100px;
+}
+
+/*ENLACES DEL MENU*/
+#menu ul a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-items: flex-start;
+  align-items: center;
+  color: #7B002C;
+  text-decoration: none;
+  font-weight: 900px;
+  font-size: 18px;
+  padding: 10px 50px 10px 50px;
+  font-family: "Gentium Book Plus", serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/*EFECTO AL PASAR EL MOUSE POR EL MENU*/
+#menu a:hover {
+  color: white;
+  background-color: #7B002C;
+  transition-duration: 0.5s;
+}
+
+#menu a:active {
+  color: #7B002C;
+  background-color: white;
+}
+
+/*ENLACES DE LOS ITEMS DEL MENU DESPLEGABLE*/
+#menu ul ul a {
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+/*ITEMS DEL MENU DESPLEGABLE AL PASAR EL MOUSE*/
+#menu li:hover ul {
+  display: block;
+}
+
+/*ITEMS DEL SUBMENU DESPLEGABLE*/
+/*#menu ul ul ul li{
+    right: -140px;
+    top: 0px;
+    left: 0;
+}
+
+
+/*ENLACES DE LOS ITEMS DEL SUBMENU DESPLEGABLE*/
+/*#menu ul ul ul a{
+    padding-top: 10px;
+    padding-right: 15px;  
+}*/
+/*ITEMS DEL SUBMENU DESPLEGABLE AL PASAR EL MOUSE*/
+/*#menu ul ul li ul:hover li{
+    display:block;
+}*/
+/*INDEX*/
+/*ACOMODAR LOGO Y SLOGAN*/
+#catarsisNombreSlogan {
+  position: relative;
+  top: 200px;
+  right: 300px;
+  text-align: center;
+}
+
+#nombreMarca,
+#sloganS {
+  font-family: "Quattrocento", serif;
+  font-size: 50px;
+  display: block;
+  margin-right: 0%;
+  margin-left: 0px;
+}
+
+#slogan {
+  font-family: "Gentium Book Plus", serif;
+  font-size: 18px;
+  display: block;
+  margin-right: 0%;
+  margin-left: 0px;
+}
+
+#logoIndex {
+  position: fixed;
+  display: block;
+  top: 190px;
+}
+
+#menu {
+  grid-area: menu;
+}
+
+#fotoPrincipalMobile {
+  grid-area: fotoPrincipalMobile;
+  height: 1150px;
+  align-items: center;
+  top: 150px;
+  width: 100%;
+}
+
+#fotoPrincipalIndex {
+  grid-area: fotoPrincipalIndex;
+  height: 1150px;
+  align-items: center;
+  margin-top: 150px;
+  margin-left: 60px;
+}
+
+#bloqueNsi {
+  grid-area: bloqueNsi;
+  display: flex;
+  flex-direction: column;
+}
+
+#footerIndex {
+  grid-area: footer;
+  position: fixed;
+  display: none;
+  margin-top: 240px;
+  margin-right: 720px;
+  font-size: small;
+}
+
+#menuIndex {
+  margin-right: 400px;
+}
+
+.navbar-toggler-icon {
+  width: 50px;
+  height: 50px;
+}
+
+#botonMenuMobile {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#estilosBotonMenu {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 990px) {
+  #bodyIndex {
+    background-image: none;
+    background-size: 100%;
+  }
+  #slogan {
+    display: none;
+  }
+  #footerIndex {
+    position: absolute;
+    top: 500px;
+    left: 550px;
+    display: none;
+    font-size: small;
+  }
+  #nombreMarca {
+    font-family: "Quattrocento", serif;
+    font-size: 100px;
+    top: 10px;
+  }
+  #logoIndex {
+    top: 0px;
+  }
+  /*GRILLA INDEX SECCIONES MOBILE*/
+  #bodyIndex {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5% 10% auto;
+    grid-template-areas: "menuIndex" "catarsisNombreSlogan" "fotoPrincipalMobile";
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 20px;
+    justify-items: center;
+  }
+  #fotoPrincipalMobile {
+    width: 100%;
+    margin-top: 20%;
+  }
+  #catarsisNombreSlogan {
+    position: fixed;
+    top: 1%;
+    justify-content: center;
+    text-align: center;
+    right: 30%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    left: 270px;
+    right: 500px;
+  }
+  #fotoLogoIndex {
+    display: none;
+  }
+}
+@media screen and (min-width: 991px) {
+  #fotoPrincipalMobile {
+    display: none;
+  }
+}
+#logoIndex {
+  position: relative;
+  display: block;
+  margin-right: 800px;
+  margin-left: 200px;
+  text-align: center;
+}
+
+#bloqueNsi {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+/*MENU DE LOS HTML con logo*/
+#fotoLogo {
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#menuDesplegable {
+  width: 194px;
+  margin-top: 0%;
+}
+
+.dropdown-menu {
+  width: 195px;
+}
+
+/*ENCABEZADO FOTO de los html*/
+#encabezado1 {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 95%;
+  height: 70%;
+  margin-top: 60px;
+  z-index: 0;
+}
+
+/*MENU*/
+#menuCompleto {
+  width: 80%;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+
+#tituloMenu {
+  text-align: center;
+  font-family: "Quattrocento", serif;
+  font-size: 70px;
+  margin-bottom: 50px;
+  color: #F0F2A6;
+  background-color: #7B002C;
+}
+
+/*RESPONSIVE MENU*/
+@media screen and (max-width: 768px) {
+  #encabezadoMobile {
+    background-color: white;
+    max-width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #tituloMobile {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    font-family: "Quattrocento", serif;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+  }
+  #decoracionMobile {
+    text-decoration: none;
+    color: black;
+  }
+  #tituloMenu {
+    text-align: center;
+    justify-content: center;
+    font-family: "Quattrocento", serif;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #F0F2A6;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,99 @@
+/*ENVIOS*/
+#tituloEnvios{
+    font-family:  $font-titulos;
+    font-size: 40px;
+    color:white;
+    background-color:$color_principal_claro;
+    text-align: center;
+    margin-top: 100px;
+    padding: 10%;
+}
+
+#bloqueEnvios{
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+#sectionEnvios{
+    height: 900px;
+    font-family: $font-textos;
+}
+
+.preguntaEnvios{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.parrafoEnvios{
+    margin-bottom: 20px;
+}
+
+/*GRID ENVIOS*/
+@media screen and (max-width: 768px){
+
+    #encabezadoMobile{
+        background-color: white;
+        max-width: 100%;
+        margin-top: 40px;
+        text-align: center;
+        justify-content:center;
+        
+    } 
+    
+    #tituloMobile{
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        font-family: $font-titulos;
+        font-size: 30px; 
+        font-weight: bold;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    #decoracionMobile{
+        text-decoration: none;
+        color: black;
+        }
+
+        #sectionEnvios{
+            height: auto;
+            font-family: $font-textos;
+        }
+
+        #bloqueEnvios{
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-bottom: 10%;
+        }
+
+        
+        #sectionEnviosFooter{
+        display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: "tituloEnvios" "bloqueEnvios" "footerEnvios";
+            row-gap: 50px;
+            column-gap: 10px;
+            margin-bottom: 80px;
+            margin-top: 40px;
+        }
+
+    #tituloEnvios{
+        font-size: 30px;
+        padding: 10%;
+    }
+
+    #tituloEnvios{
+    grid-area: tituloEnvios;
+    }
+
+    #bloqueEnvios{
+    grid-area: bloqueEnvios;
+    }
+
+    #footerEnvios{
+    grid-area: footerEnvios;
+    }
+
+}

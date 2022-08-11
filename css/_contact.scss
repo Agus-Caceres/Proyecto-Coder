@@ -1,0 +1,94 @@
+/*CONTACT US*/
+#contactateConNosotros{
+    text-align: center;
+    font-family: $font-titulos;
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    padding: 0%;
+}
+
+#formContacto{
+    margin-top: 100px;  
+    margin-bottom: 100px;
+    text-align: center;
+    width: 500px;
+}
+
+#bloqueForm{
+    display: flex;
+    align-content:flex-start;
+    justify-content:center;
+    background-color: $color_principal_claro;
+    height: auto;
+    margin-top: 80px;
+}
+
+#tituloContacto{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: $font-titulos;
+    font-weight: bold;
+    color: $color_principal;
+    background-color: #F0F2A6;
+}
+
+#formulario{
+    color: white;
+    font-size: 18px;
+    font-family: $font-textos;
+}
+
+#boton{
+    margin-top: 10px;
+    background-color: #F0F2A6;
+    color: $color_principal;
+    font-weight: bold;
+}
+
+#boton:hover{
+    background-color: $color_principal;
+    color: #F0F2A6;
+}
+#boton:active{
+    background-color:#F0F2A6;
+    color:$color_principal;
+}
+
+
+@media screen and (max-width: 530px){
+
+
+    #contactateConNosotros{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    #encabezadoMobile{
+        background-color: white;
+        max-width: 100%;
+        margin-top: 40px;
+        text-align: center;
+        justify-content:center;
+        
+    } 
+    
+    #tituloMobile{
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        font-family: $font-titulos;
+        font-size: 30px; 
+        font-weight: bold;
+        margin-top: 40px;
+        width: 100%;
+    }
+    
+    #decoracionMobile{
+        text-decoration: none;
+        color: black;
+        }
+        }
