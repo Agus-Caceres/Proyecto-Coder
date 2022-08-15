@@ -21,8 +21,8 @@
 }
 
 .preguntaEnvios{
-    font-size: 18px;
-    font-weight: bolder;
+    @include fuente(18px, bolder);
+    
 }
 
 .parrafoEnvios{
@@ -43,7 +43,7 @@
     
     #tituloMobile{
         display: flex;
-        text-align: center;
+        text-align: map-get($mapaEstilos, centro);
         justify-items: center;
         font-family: $font-titulos;
         font-size: 30px; 
@@ -70,7 +70,7 @@
 
         
         #sectionEnviosFooter{
-        display: grid;
+            display: grid;
             grid-template-columns: auto;
             grid-template-rows: "tituloEnvios" "bloqueEnvios" "footerEnvios";
             row-gap: 50px;

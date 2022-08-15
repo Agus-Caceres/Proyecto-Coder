@@ -9,7 +9,7 @@
     font-size: 60px;
     color:white;
     background-color:$color_principal_claro;
-    text-align: center;
+    text-align: map-get($mapaEstilos, centro);
     justify-items: center;
     margin-top: 100px;
     padding: 8%; 
@@ -32,7 +32,7 @@
 .tituloProducto{
     font-family: $font-textos;
     font-size: 30px;
-    text-align: center;
+    text-align: map-get($mapaEstilos, centro);
     margin-top: 50px;
     background-color: black;
     color: white;
@@ -65,7 +65,7 @@
         background-color: white;
         max-width: 100%;
         margin-top: 40px;
-        text-align: center;
+        text-align: map-get($mapaEstilos, centro);
         justify-content:center;
         
     } 

@@ -1,6 +1,6 @@
 /*CONTACT US*/
 #contactateConNosotros{
-    text-align: center;
+    text-align: map-get($mapaEstilos, centro);
     font-family: $font-titulos;
     font-size: 50px;
     color: white;
@@ -11,7 +11,7 @@
 #formContacto{
     margin-top: 100px;  
     margin-bottom: 100px;
-    text-align: center;
+    text-align: map-get($mapaEstilos, centro);
     width: 500px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 #tituloContacto{
-    text-align: center;
+    text-align: map-get($mapaEstilos, centro);
     margin-bottom: 50px;
     font-family: $font-titulos;
     font-weight: bold;
@@ -71,14 +71,14 @@
         background-color: white;
         max-width: 100%;
         margin-top: 40px;
-        text-align: center;
+        text-align: map-get($mapaEstilos, centro);
         justify-content:center;
         
     } 
     
     #tituloMobile{
         display: flex;
-        text-align: center;
+        text-align: map-get($mapaEstilos, centro);
         justify-items: center;
         font-family: $font-titulos;
         font-size: 30px; 

@@ -4,3 +4,16 @@ $color_secundario: white;
 $font-principal: 'Gentium Book Plus', serif;
 $font-titulos:'Quattrocento', serif;
 $font-textos:'Gentium Book Plus', serif;
+
+/*MAPA ESTILOS*/
+$mapaEstilos:(
+    centro: center,
+    tFuente: 40px,
+    colorBlanco: white,
+    margenTop: 20px,
+);
+
+@mixin fuente($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+}

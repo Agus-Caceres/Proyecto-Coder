@@ -1,33 +1,30 @@
 /*TITULOS ABOUT*/
 #tituloPrimero{
-    text-align: center;
+    text-align: map-get($mapaEstilos, centro);
     font-family: $font-titulos;
     font-size: 70px;
     padding: 40px;
     margin-bottom: 10px;
-    color: white;
+    color: map-get($mapaEstilos, colorBlanco);
  }
  
  #textoSobreNosotros{
- margin-left: 60px;
- color: white;
- font-family: $font-textos;
- font-size: 16px;
- }
+    margin-left: 60px;
+    color: map-get($mapaEstilos, colorBlanco);
+    font-family: $font-textos;
+    font-size: 12px;
+    }
  
  #bloqueSobreNosotros{
      background-color: $color_principal_claro;
      margin-top: 100px;
- }
+     height:100% ;
+    }
  
  #tituloSegundo{
-     text-align: center;
-        font-family: $font-titulos;
-        font-size: 70px;
-        margin-bottom: 10px;
-        padding: 40px;
-        color: black;
-     }
+    @extend #tituloPrimero;
+    color: black;
+    }
  
  #section{
      margin-left: 60px;
@@ -37,14 +34,8 @@
      font-size: 16px;  
      }
  
- #parrafoDosCatarsis{
-     margin-top: 20px;
- }
- 
- #parrafoTresCatarsis{
-     margin-top: 20px;
- }
- 
+ #parrafoDosCatarsis,
+ #parrafoTresCatarsis,
  #parrafoCuatroCatarsis{
      margin-top: 20px;
  }
@@ -53,9 +44,9 @@
      margin-bottom: 50px;
      font-size: 25px;
      font-family: $font-titulos;
-     text-align: center;
+     text-align: map-get($mapaEstilos, centro);
      background-color: $color_principal_claro;
-     color: white;
+     color: map-get($mapaEstilos, colorBlanco);
      padding: 20px;
      transition-delay: 4s;
  }
@@ -90,7 +81,7 @@
  /*RESPONSIVE ABOUT*/
  
  
- @media screen and (max-width: 768px){
+ @media screen and (max-width: 1099px){
  
  #encabezado1{
        display: none;
@@ -100,7 +91,7 @@
      background-color: white;
      max-width: 100%;
      margin-top: 40px;
-     text-align: center;
+     text-align: map-get($mapaEstilos, centro);
      justify-content:center;
      
  } 
@@ -125,6 +116,7 @@
      grid-template-rows: 15% auto;
      grid-template-areas: "tituloPrimero" "textoSobreNosotros" ;
      row-gap: 20px;  
+     width: 100%;
  }   
  
  #porqueCatarsis {
@@ -138,9 +130,11 @@
  
  #tituloPrimero {
      font-size: 55px;
-     padding: 15px;
-     margin-bottom: 5px;
-     text-align:center;
+     padding: 20px;
+     margin-top: 10px;
+     margin-bottom: 0px;
+     text-align:map-get($mapaEstilos, centro);
+     align-items:center ;
  }
  
  #tituloSegundo {
@@ -148,7 +142,7 @@
      padding: 20px;
      margin-bottom: 5px;
      margin-top: 20px;
-     text-align: center;
+     text-align: map-get($mapaEstilos, centro);
  }
  
  #textoSobreNosotros,
@@ -186,14 +180,17 @@
  }
 
  @media screen and (min-width: 300px) and (max-width: 429px){
-    #fotoEncabezado{
-        display: none;
+   
+    #bloqueSobreNosotros{
+        height: 100%;
     }
  }
+
  @media screen and (min-width: 990px) and (max-width: 1099px){
     #decoracionMobile{
         display: none;
     }
+
  }
  
  @media screen and (min-width: 430px) and (max-width: 768px){
@@ -201,11 +198,7 @@
      #fotoEncabezadoMobile{
          display: none;
      }
-     
-        #fotoEncabezadoMobile{
-            display: none;
-        }
-
+    
      #encabezado1{
          display: flex;
          justify-content: center;
@@ -259,7 +252,7 @@
      font-size: 55px;
      padding: 15px;
      margin-bottom: 5px;
-     text-align:center;
+     text-align:map-get($mapaEstilos, centro);
  }
  
  #tituloSegundo {
@@ -267,7 +260,7 @@
      padding: 20px;
      margin-bottom: 5px;
      margin-top: 20px;
-     text-align: center;
+     text-align: map-get($mapaEstilos, centro);
  } 
  
  #sobreNosotros {
@@ -303,7 +296,7 @@
  
      #textoSobreNosotros,
      #section{
-         font-size: 18px;
+         font-size: 17px;
          text-align:justify;
          margin-right: 60px;
      }
@@ -314,12 +307,12 @@
  
      #sobreNosotros{
          display: grid;
-         height: 900px;
+         height: 995px;
          grid-template-columns: 60% auto;
-         grid-template-rows: 20% auto;
+         grid-template-rows: 15% auto;
          grid-template-areas: "tituloPrimero tituloPrimero" "textoSobreNosotros fotoSobreNosotros";
          column-gap: 20px;
-         row-gap: 20px; 
+         row-gap: 5px; 
          justify-items: center;
      }
  
@@ -341,15 +334,19 @@
          padding: 15px;
          margin-bottom: 5px;
          margin-top: 20px;
-         text-align:center;
+         text-align:map-get($mapaEstilos, centro);
      }
      
      #tituloSegundo {
-         font-size: 70px;
          padding: 20px;
+         font-size: 70px;
          margin-bottom: 5px;
          margin-top: 20px;
-         text-align: center;
+         text-align: map-get($mapaEstilos, centro);
+     }
+
+     #bloqueSobreNsotros{
+        width: 100%;
      }
    
  }

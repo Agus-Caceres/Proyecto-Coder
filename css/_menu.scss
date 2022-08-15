@@ -1,0 +1,60 @@
+/*MENU*/
+
+
+#menuCompleto{
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 150px;
+
+} 
+
+#tituloMenu{
+    text-align: center;
+    font-family: $font-titulos;
+    @include fuente(70px, 200);
+    margin-bottom: 50px;
+   color: #F0F2A6;
+   background-color: $color_principal;
+}
+
+
+/*RESPONSIVE MENU*/
+
+   
+@media screen and (max-width: 768px){
+
+    #encabezadoMobile{
+        background-color: white;
+        max-width:100%;
+        margin-top: 40px;
+        text-align: center;
+        justify-content:center;
+        width: 100%; 
+    } 
+    
+    
+    #tituloMobile{
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        font-family: $font-titulos;
+        @include fuente(30px, bold);
+       
+        width: 100%;
+    }
+    
+    #decoracionMobile{
+        text-decoration: none;
+        color: black;
+    }
+
+    #tituloMenu{
+        text-align: center;
+        justify-content: center;
+        font-family: $font-titulos;
+        font-size: 50px;
+        margin-bottom: 50px;
+        color: #F0F2A6;
+    } 
+}
