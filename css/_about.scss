@@ -100,8 +100,7 @@
      display: flex;
      justify-content: center;
      font-family: $font-titulos;
-     font-size: 30px; 
-     font-weight: bold;
+     @include fuente(20px, bold);
      margin-top: 40px;
  }
  
@@ -222,8 +221,7 @@
      display: flex;
      justify-content: center;
      font-family: $font-titulos;
-     font-size: 30px; 
-     font-weight: bold;
+     @include fuente(30px, bold);
      margin-top: 40px;  
  }
  

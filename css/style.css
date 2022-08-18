@@ -330,7 +330,7 @@
     display: flex;
     justify-content: center;
     font-family: "Quattrocento", serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 40px;
   }
@@ -867,8 +867,8 @@ footer {
 #contactateConNosotros {
   text-align: center;
   font-family: "Quattrocento", serif;
-  font-size: 50px;
   color: white;
+  font-size: 50px;
   font-weight: bolder;
   padding: 0%;
 }
@@ -893,6 +893,7 @@ footer {
   text-align: center;
   margin-bottom: 50px;
   font-family: "Quattrocento", serif;
+  font-size: 45px;
   font-weight: bold;
   color: #7B002C;
   background-color: #F0F2A6;
@@ -908,6 +909,7 @@ footer {
   margin-top: 10px;
   background-color: #F0F2A6;
   color: #7B002C;
+  font-size: 18px;
   font-weight: bold;
 }
 

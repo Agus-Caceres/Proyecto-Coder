@@ -2,9 +2,8 @@
 #contactateConNosotros{
     text-align: map-get($mapaEstilos, centro);
     font-family: $font-titulos;
-    font-size: 50px;
     color: white;
-    font-weight: bolder;
+    @include fuente(50px, bolder);
     padding: 0%;
 }
 
@@ -28,7 +27,7 @@
     text-align: map-get($mapaEstilos, centro);
     margin-bottom: 50px;
     font-family: $font-titulos;
-    font-weight: bold;
+    @include fuente(45px, bold);
     color: $color_principal;
     background-color: #F0F2A6;
 }
@@ -43,7 +42,8 @@
     margin-top: 10px;
     background-color: #F0F2A6;
     color: $color_principal;
-    font-weight: bold;
+    @include fuente(18px, bold);
+   
 }
 
 #boton:hover{
@@ -81,8 +81,7 @@
         text-align: map-get($mapaEstilos, centro);
         justify-items: center;
         font-family: $font-titulos;
-        font-size: 30px; 
-        font-weight: bold;
+        @include fuente(30px, bold);
         margin-top: 40px;
         width: 100%;
     }
