@@ -1,12 +1,9 @@
 /*MENU*/
-
-
 #menuCompleto{
     width: 80%;
     margin: auto;
     margin-top: 200px;
     margin-bottom: 150px;
-
 } 
 
 #tituloMenu{
@@ -18,10 +15,7 @@
    background-color: $color_principal;
 }
 
-
 /*RESPONSIVE MENU*/
-
-   
 @media screen and (max-width: 768px){
 
     #encabezadoMobile{
