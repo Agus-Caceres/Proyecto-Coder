@@ -216,11 +216,15 @@
         font-family: $font-titulos;
         font-size: 100px;
         top: 10px;
+        position: fixed;
         }
 
     #logoIndex{
-        top: 0px;
-                
+        top: 0px;       
+        }
+
+        #fotoPrincipalMobile{
+            width: 70%;
         }
 
     /*GRILLA INDEX SECCIONES MOBILE*/
