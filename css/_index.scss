@@ -215,17 +215,14 @@
     #nombreMarca{
         font-family: $font-titulos;
         font-size: 100px;
-        top: 10px;
-        position: fixed;
+        
+        position: relative;
         }
 
     #logoIndex{
         top: 0px;       
         }
 
-        #fotoPrincipalMobile{
-            width: 70%;
-        }
 
     /*GRILLA INDEX SECCIONES MOBILE*/
     #bodyIndex{
@@ -233,26 +230,32 @@
         grid-template-columns: auto;
         grid-template-rows: 5% 10% auto;
         grid-template-areas: "menuIndex" "catarsisNombreSlogan" "fotoPrincipalMobile";
-        column-gap: 20px;
+        column-gap: 0px;
         row-gap: 20px;
         justify-items: center;
+        padding-right: 0px;
+        margin-right: 0px;
      }
 
      #fotoPrincipalMobile{
         width: 100%;  
+        height: auto;
         margin-top: 20%;
+     }
+
+     #bloqueFotoMobile{
+        width: 100%;  
      }
      
     #catarsisNombreSlogan{
-        position:fixed;
-        top: 1%;
+        position:relative;
+        top: 0%;
         justify-content: center;
         text-align: center;
-        right: 30%;
         margin-bottom: 20px;
         font-weight:bold;
-        left: 270px;
-        right: 500px;
+        left: 0px;
+        right: 600px;
         }
 
     #fotoLogoIndex{
@@ -265,6 +268,10 @@
 
 @media screen and (min-width: 991px) {
     #fotoPrincipalMobile{
+        display: none;
+    }
+
+    .img-responsive{
         display: none;
     }
         
