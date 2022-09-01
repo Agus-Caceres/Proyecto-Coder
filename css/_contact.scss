@@ -29,7 +29,7 @@
     font-family: $font-titulos;
     @include fuente(45px, bold);
     color: $color_principal;
-    background-color: #F0F2A6;
+    background-color: white;
 }
 
 #formulario{
@@ -40,7 +40,7 @@
 
 #boton{
     margin-top: 10px;
-    background-color: #F0F2A6;
+    background-color: white;
     color: $color_principal;
     @include fuente(18px, bold);
    

@@ -193,6 +193,12 @@
 #estilosBotonMenu{
     margin-top: 15px;
 }
+@media screen and (min-width: 360px) and (max-width: 989px){
+    #nombreMarca{
+        font-size: small;
+    }
+ }
+
 @media screen and (max-width: 990px){
     #bodyIndex{
         background-image:none;
@@ -226,11 +232,8 @@
 
     /*GRILLA INDEX SECCIONES MOBILE*/
     #bodyIndex{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 5% 10% auto;
-        grid-template-areas: "menuIndex" "catarsisNombreSlogan" "fotoPrincipalMobile";
-        column-gap: 0px;
+        display: flex;
+        flex-direction: row;
         row-gap: 20px;
         justify-items: center;
         padding-right: 0px;
@@ -253,6 +256,8 @@
         justify-content: center;
         text-align: center;
         margin-bottom: 20px;
+        margin-right: 350px;
+        margin-left: auto;
         font-weight:bold;
         left: 0px;
         right: 600px;
