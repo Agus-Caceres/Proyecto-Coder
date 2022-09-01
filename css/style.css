@@ -192,6 +192,7 @@
   }
   /*GRILLA INDEX SECCIONES MOBILE*/
   #bodyIndex {
+    width: auto;
     display: flex;
     flex-direction: row;
     row-gap: 20px;
