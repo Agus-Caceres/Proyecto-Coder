@@ -144,10 +144,6 @@
   font-size: small;
 }
 
-#menuIndex {
-  margin-right: 400px;
-}
-
 .navbar-toggler-icon {
   width: 50px;
   height: 50px;
@@ -178,7 +174,6 @@
     font-size: small;
   }
   #nombreMarca {
-    display: none;
     font-family: "Quattrocento", serif;
     font-size: 100px;
     position: relative;
