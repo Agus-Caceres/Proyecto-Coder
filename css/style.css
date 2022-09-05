@@ -215,7 +215,7 @@
   }
   #fotoPrincipalCelular1 {
     position: relative;
-    margin-left: 100px;
+    /*margin-left: 100px;*/
   }
 }
 @media screen and (min-width: 991px) {
