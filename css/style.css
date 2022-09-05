@@ -113,7 +113,7 @@
   grid-area: menu;
 }
 
-#fotoPrincipalMobile {
+#fotoPrincipalCelular1 {
   grid-area: fotoPrincipalMobile;
   height: 1100px;
   align-items: center;
@@ -199,7 +199,7 @@
     top: 0%;
     font-weight: bold;
     left: 0px;
-    right: 500px;
+    right: 600px;
   }
   #fotoLogoIndex {
     display: none;
@@ -213,9 +213,13 @@
     width: 100%;
     height: auto;
   }
+  #fotoPrincipalCelular1 {
+    position: relative;
+    margin-left: 100px;
+  }
 }
 @media screen and (min-width: 991px) {
-  #fotoPrincipalMobile {
+  #fotoPrincipalCelular1 {
     display: none;
   }
   #carouselExampleIndicators {
