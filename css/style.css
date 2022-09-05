@@ -178,6 +178,7 @@
     font-size: small;
   }
   #nombreMarca {
+    display: none;
     font-family: "Quattrocento", serif;
     font-size: 100px;
     position: relative;
@@ -192,8 +193,8 @@
     flex-direction: row;
     row-gap: 20px;
     justify-items: center;
-    padding-right: 0px;
-    margin-right: 0px;
+    padding: 0px;
+    margin: 0px;
   }
   #catarsisNombreSlogan {
     position: relative;
@@ -220,6 +221,9 @@
 }
 @media screen and (min-width: 991px) {
   #fotoPrincipalMobile {
+    display: none;
+  }
+  #carouselExampleIndicators {
     display: none;
   }
   .img-responsive {
