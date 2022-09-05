@@ -198,7 +198,10 @@
   
     #bodyIndex{
         background-image:none;
-        background-size:100%;
+        width: 100%;
+        margin-right: 0px;
+        padding-right: 0px;
+        right: 0px;
      }
       
     #slogan{
@@ -226,18 +229,15 @@
 
     /*GRILLA INDEX SECCIONES MOBILE*/
     #bodyIndex{
-        width: auto;
-        display: flex;
+        display:inline-block;
         flex-direction: row;
-        row-gap: 20px;
+        align-items: center;
         justify-items: center;
-        padding: 0px;
-        margin: 0px;
      }
      
     #catarsisNombreSlogan{
         position:relative;
-        display: flex;
+        display: block;
         justify-content: center;
         text-align: center;
         top: 0%;
@@ -263,7 +263,7 @@
 
     #fotoPrincipalCelular1{
        position: relative;
-       /*margin-left: 100px;*/
+       margin-left: 100px;
     }
      }   
 

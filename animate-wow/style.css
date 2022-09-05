@@ -228,7 +228,6 @@ background-color:#7B002C;
     grid-template-columns: auto;
     grid-template-rows: 20% auto 10%;
     grid-template-areas: "bloqueNsi" "fotoPrincipalMobile" "footer";
-    column-gap: 20px;
     row-gap: 20px; 
     justify-items: center;
  }
@@ -241,7 +240,6 @@ background-color:#7B002C;
         grid-template-columns: auto;
         grid-template-rows: 20% auto 10%;
         grid-template-areas: "bloqueNsi" "fotoPrincipalMobile" "footer";
-        column-gap: 20px;
         row-gap: 20px; 
         justify-items: center;
      }
