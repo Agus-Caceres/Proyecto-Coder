@@ -178,7 +178,7 @@
   }
   #nombreMarca {
     font-family: "Quattrocento", serif;
-    font-size: 100px;
+    font-size: 80px;
     position: relative;
   }
   #logoIndex {
@@ -194,12 +194,10 @@
   #catarsisNombreSlogan {
     position: relative;
     display: block;
-    justify-content: center;
     text-align: center;
     top: 0%;
     font-weight: bold;
-    left: 0px;
-    right: 600px;
+    left: 5%;
   }
   #fotoLogoIndex {
     display: none;
@@ -215,7 +213,7 @@
   }
   #fotoPrincipalCelular1 {
     position: relative;
-    margin-left: 100px;
+    margin-left: 0%;
   }
 }
 @media screen and (min-width: 991px) {
